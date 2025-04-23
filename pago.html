@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra - Nevera Dulce</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Poller+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_upward" />
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="imagenes/helado.png" alt="helado" class="iconosMenu">
+            <div class="logo">ICE CREAM</div>
+            <ul class="menu">
+                <li><a href="index.html#bienvenida">Bienvenida</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="index.html#vision">Visión</a></li>
+                <li><a href="index.html#conocenos">Conocenos</a></li>
+                <li><a href="index.html#horario">Horario</a></li>
+                <li><a href="pago.html">Pago</a></li>
+            </ul>
+            <a href="carrito.html" class="carrito-link">
+                <img src="imagenes/carrito-de-compras.png" alt="carrito" class="iconosMenu">
+                <span id="contador-carrito">0</span>
+            </a>
+        </nav>
+    </header>
+    <main class="contenedor-pago">
+        <h1>Finalizar Compra</h1>
+        <div class="proceso-pago">
+            <!-- Paso 1: Método de pago -->
+            <section class="seccion-pago">
+                <h1>1. Método de pago</h1>
+                <div class="metodos-pago">
+                    <div class="opcion-pago">
+                        <input type="radio" name="metodo-pago" id="tarjeta" checked>
+                        <label for="tarjeta">
+                            <strong>Tarjeta de crédito/débito</strong>
+                            <p>Se aceptan tarjetas regulares, digitales y planes de pago</p>
+                            <div class="tarjetas-aceptadas">
+                                <img src="imagenes/visa.png" alt="VISA">
+                                <img src="imagenes/mastercard.png" alt="Mastercard">
+                                <img src="imagenes/amex.png" alt="American Express">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="opcion-pago">
+                        <input type="radio" name="metodo-pago" id="paypal">
+                        <label for="paypal">
+                            <strong>PayPal</strong>
+                            <p>Paga con tu cuenta PayPal de forma segura</p>
+                        </label>
+                    </div>
+                    <div class="opcion-pago">
+                        <input type="radio" name="metodo-pago" id="oxxo">
+                        <label for="oxxo">
+                            <strong>OXXO</strong>
+                            <p>Paga en cualquier tienda OXXO</p>
+                            <p class="nota">Código de barras generado al confirmar</p>
+                        </label>
+                    </div>
+                </div>
+            </section>
+            <!-- Paso 2: Dirección de envío -->
+            <section class="seccion-pago">
+                <h1>2. Dirección de envío</h1>
+                <form class="formulario-envio">
+                    <div class="campo-formulario">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" required>
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="direccion">Dirección</label>
+                        <input type="text" id="direccion" required>
+                    </div>
+                    <div class="campos-dobles">
+                        <div class="campo-formulario">
+                            <label for="cp">Código Postal</label>
+                            <input type="text" id="cp" required>
+                        </div>
+                        <div class="campo-formulario">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" required>
+                        </div>
+                    </div>
+                </form>
+            </section>
+            <section class="seccion-pago">
+                <h1>3. Método de envío</h1>
+                <div class="opciones-envio">
+                    <div class="opcion-envio">
+                        <input type="radio" name="envio" id="estandar" checked>
+                        <label for="estandar">
+                            <strong>Envío Estándar</strong>
+                            <p>20-30 minutos</p>
+                            <p class="precio-envio">$50.00</p>
+                        </label>
+                    </div>
+                    
+                    <div class="opcion-envio">
+                        <input type="radio" name="envio" id="express">
+                        <label for="express">
+                            <strong>Envío Express</strong>
+                            <p>10-15 minutos</p>
+                            <p class="precio-envio">$120.00</p>
+                        </label>
+                    </div>
+                    <div class="opcion-envio">
+                        <input type="radio" name="envio" id="recoger">
+                        <label for="recoger">
+                            <strong>Recoger en tienda</strong>
+                            <p>Sin costo</p>
+                            <p class="precio-envio">$0.00</p>
+                        </label>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <aside class="resumen-pedido">
+            <h1>Resumen del Pedido</h1>
+            <div class="productos-resumen" id="productos-resumen">
+                <!-- Los productos se cargarán aquí con JavaScript -->
+            </div>
+            
+            <div class="totales">
+                <div class="fila-total">
+                    <span>Subtotal</span>
+                    <span id="subtotal">$0.00</span>
+                </div>
+                <div class="fila-total">
+                    <span>Envío</span>
+                    <span id="envio-precio">$0.00</span>
+                </div>
+                <div class="fila-total total-final">
+                    <span>Total</span>
+                    <span id="total-pagar">$0.00</span>
+                </div>
+            </div>
+            <button id="confirmar-pago" class="btn-pagar">Confirmar Pago</button>
+            <div class="proteccion-pago">
+                <img src="imagenes/candado.png" alt="Protegido">
+                <p>Tu información está protegida con encriptación SSL</p>
+            </div>
+        </aside>
+    </main>
+    <a href="#" id="volver"><span class="material-symbols-outlined">
+        arrow_upward
+        </span></a>
+</body>
+</html>

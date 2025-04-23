@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Nevera Dulce</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Poller+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_upward" />
+</head>
+<body>
+    <!--Encabezado-->
+    <header>
+        <nav class="navbar">
+            <img src="imagenes/helado.png" alt="helado" class="iconosMenu">
+            <div class="logo">ICE CREAM</div>
+            <ul class="menu">
+                <li><a href="index.html#bienvenida">Bienvenida</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="index.html#vision">Visión</a></li>
+                <li><a href="index.html#conocenos">Conocenos</a></li>
+                <li><a href="index.html#horario">Horario</a></li>
+                <li><a href="pago.html">Pago</a></li>
+            </ul>
+            <a href="carrito.html" class="carrito-link">
+                <img src="imagenes/carrito-de-compras.png" alt="carrito" class="iconosMenu">
+                <span id="contador-carrito">0</span>
+            </a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="seccion-productos">
+            <h1>Nuestros Productos</h1>
+            <div class="grid-productos">
+                <!-- Fila 1 -->
+                <div class="producto">
+                    <img src="imagenes/productos1.jpg" alt="Helado de Vainilla">
+                    <h3>Helado de Vainilla Clásica</h3>
+                    <p>$20</p>
+                    <button class="btn-agregar-carrito" data-id="1" data-nombre="Vainilla Clásica" data-precio="20.00">
+                        <img src="imagenes/carrito-de-compras.png" alt="Agregar al carrito" class="icono-carrito">
+                        Agregar
+                    </button>
+                </div>
+                <div class="producto">
+                    <img src="imagenes/productos2.jpg" alt="Helado de Chocolate">
+                    <h3>Helado Sabor Chocolate Intenso</h3>
+                    <p>$35</p>
+                    <button class="btn-agregar-carrito" data-id="2" data-nombre="Helado de Chocolate" data-precio="35.00">
+                        <img src="imagenes/carrito-de-compras.png" alt="Agregar al carrito" class="icono-carrito">
+                        Agregar
+                    </button>
+                </div>
+                <div class="producto">
+                    <img src="imagenes/productos3.jpg" alt="Helado de Fresa">
+                    <h3>Helado Sabor Fresa Fresca</h3>
+                    <p>$40</p>
+                    <button class="btn-agregar-carrito" data-id="3" data-nombre="Helado de Fresa" data-precio="40.00">
+                        <img src="imagenes/carrito-de-compras.png" alt="Agregar al carrito" class="icono-carrito">
+                        Agregar
+                    </button>
+                </div>
+                <!-- Fila 2 -->
+                <div class="producto">
+                    <img src="imagenes/producto7.jpg" alt="Helado de Frutos Rojos">
+                    <h3>Helado de Frutos Rojos</h3>
+                    <p>$25</p>
+                    <button class="btn-agregar-carrito" data-id="7" data-nombre="Helado de Frutos Rojos" data-precio="25.00">
+                        <img src="imagenes/carrito-de-compras.png" alt="Agregar al carrito" class="icono-carrito">
+                        Agregar
+                    </button>
+                </div>
+                <div class="producto">
+                    <img src="imagenes/producto8.jpg" alt="Helado de Lima">
+                    <h3>Helado sabor Lima fresco</h3>
+                    <p>$15</p>
+                    <button class="btn-agregar-carrito" data-id="8" data-nombre="Helado de Lima" data-precio="15.00">
+                        <img src="imagenes/carrito-de-compras.png" alt="Agregar al carrito" class="icono-carrito">
+                        Agregar
+                    </button>
+                </div>
+                <div class="producto">
+                    <img src="imagenes/producto9.jpg" alt="Helado de Cajeta">
+                    <h3>Helado Sabor Cajeta</h3>
+                    <p>$25</p>
+                    <button class="btn-agregar-carrito" data-id="9" data-nombre="Helado de Cajeta" data-precio="25.00">
+                        <img src="imagenes/carrito-de-compras.png" alt="Agregar al carrito" class="icono-carrito">
+                        Agregar
+                    </button>
+                </div>
+                
+                <!-- Fila 3 -->
+                <div class="producto">
+                    <img src="imagenes/producto4.jpg" alt="Paleta de fresa">
+                    <h3>Paleta sabor fresa</h3>
+                    <p>$15</p>
+                    <button class="btn-agregar-carrito" data-id="4" data-nombre="Paleta de fresa" data-precio="15.00">
+                        <img src="imagenes/carrito-de-compras.png" alt="Agregar al carrito" class="icono-carrito">
+                        Agregar
+                    </button>
+                </div>
+                <div class="producto">
+                    <img src="imagenes/producto5.jpg" alt="paleta de Limón">
+                    <h3>Paleta de Limón</h3>
+                    <p>$15</p>
+                    <button class="btn-agregar-carrito" data-id="5" data-nombre="paleta de Limón" data-precio="15.00">
+                        <img src="imagenes/carrito-de-compras.png" alt="Agregar al carrito" class="icono-carrito">
+                        Agregar
+                    </button>
+                </div>
+                <div class="producto">
+                    <img src="imagenes/producto6.jpg" alt="Paleta de Cookies">
+                    <h3>Paleta Cookies & Cream</h3>
+                    <p>$15</p>
+                    <button class="btn-agregar-carrito" data-id="6" data-nombre="Paleta de Cookies" data-precio="15.00">
+                        <img src="imagenes/carrito-de-compras.png" alt="Agregar al carrito" class="icono-carrito">
+                        Agregar
+                    </button>
+                </div>
+                <!-- Fila 4 -->
+                <div class="producto">
+                    <img src="imagenes/producto10.jpg" alt="Paleta de Mango">
+                    <h3>Paleta sabor Mango con Chamoy</h3>
+                    <p>$22</p>
+                    <button class="btn-agregar-carrito" data-id="10" data-nombre="Paleta de Mango" data-precio="22.00">
+                        <img src="imagenes/carrito-de-compras.png" alt="Agregar al carrito" class="icono-carrito">
+                        Agregar
+                    </button>
+                </div>
+                <div class="producto">
+                    <img src="imagenes/producto11.jpg" alt="paleta de Galleta">
+                    <h3>Paleta de Galleta</h3>
+                    <p>$15</p>
+                    <button class="btn-agregar-carrito" data-id="11" data-nombre="paleta de Galleta" data-precio="15.00">
+                        <img src="imagenes/carrito-de-compras.png" alt="Agregar al carrito" class="icono-carrito">
+                        Agregar
+                    </button>
+                </div>
+                <div class="producto">
+                    <img src="imagenes/procusto12.jpg" alt="Paleta de gomitas">
+                    <h3>Paleta de gomitas</h3>
+                    <p>$15</p>
+                    <button class="btn-agregar-carrito" data-id="12" data-nombre="Paleta de gomitas" data-precio="15.00">
+                        <img src="imagenes/carrito-de-compras.png" alt="Agregar al carrito" class="icono-carrito">
+                        Agregar
+                    </button>
+                </div>
+                <!-- Fila 5 -->
+                <div class="producto">
+                    <img src="imagenes/producto13.jpg" alt="Frappe de fresa">
+                    <h3>Frappe de fresa</h3>
+                    <p>$45</p>
+                    <button class="btn-agregar-carrito" data-id="13" data-nombre="Frappe de fresa" data-precio="45.00">
+                        <img src="imagenes/carrito-de-compras.png" alt="Agregar al carrito" class="icono-carrito">
+                        Agregar
+                    </button>
+                </div>
+                <div class="producto">
+                    <img src="imagenes/producto14.jpg" alt="Frappe de Zarzamora">
+                    <h3>Frappe de Zarzamora</h3>
+                    <p>$50</p>
+                    <button class="btn-agregar-carrito" data-id="14" data-nombre="Frappe de Zarzamora" data-precio="50.00">
+                        <img src="imagenes/carrito-de-compras.png" alt="Agregar al carrito" class="icono-carrito">
+                        Agregar
+                    </button>
+                </div>
+                <div class="producto">
+                    <img src="imagenes/producto15.jpg" alt="Frappe de galleta">
+                    <h3>Frappe de Galleta</h3>
+                    <p>$55</p>
+                    <button class="btn-agregar-carrito" data-id="15" data-nombre="Frappe de galleta" data-precio="55.00">
+                        <img src="imagenes/carrito-de-compras.png" alt="Agregar al carrito" class="icono-carrito">
+                        Agregar
+                    </button>
+                </div>
+                <!-- Fila 6 -->
+                <div class="producto">
+                    <img src="imagenes/producto16.jpeg" alt="Frappe Frutos Rojos">
+                    <h3>Frappe de Frutos Rojos con Zarzamora</h3>
+                    <p>$65</p>
+                    <button class="btn-agregar-carrito" data-id="16" data-nombre="Frappe Frutos Rojos" data-precio="65.00">
+                        <img src="imagenes/carrito-de-compras.png" alt="Agregar al carrito" class="icono-carrito">
+                        Agregar
+                    </button>
+                </div>
+                <div class="producto">
+                    <img src="imagenes/producto17.jpeg" alt="Frappe de Nieve">
+                    <h3>Frappe de Nieve de Vainilla</h3>
+                    <p>$55</p>
+                    <button class="btn-agregar-carrito" data-id="17" data-nombre="Frappe de Nieve" data-precio="85.00">
+                        <img src="imagenes/carrito-de-compras.png" alt="Agregar al carrito" class="icono-carrito">
+                        Agregar
+                    </button>
+                </div>
+                <div class="producto">
+                    <img src="imagenes/producto18.jpeg" alt="Frappe de Mazapan">
+                    <h3>Frappe de Mazapan con galleta</h3>
+                    <p>$70</p>
+                    <button class="btn-agregar-carrito" data-id="18" data-nombre="Frappe de Mazapan" data-precio="70.00">
+                        <img src="imagenes/carrito-de-compras.png" alt="Agregar al carrito" class="icono-carrito">
+                        Agregar
+                    </button>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Nevera Dulce. Todos los derechos reservados.</p>
+        <p>Contacto: contacto@neveradulce.com | Tel: (123) 456-7890</p>
+    </footer>
+    <a href="#" id="volver"><span class="material-symbols-outlined">
+        arrow_upward
+        </span></a>
+</body>
+</html>
+
